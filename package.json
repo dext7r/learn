@@ -1,0 +1,27 @@
+{
+  "name": "warrior",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev:app": "pnpm --filter @warrior/app dev",
+    "dev:dev": "pnpm --filter @warrior/dev dev",
+    "build:app": "pnpm --filter @warrior/app build",
+    "build:dev": "pnpm --filter @warrior/dev build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.11.6",
+    "eslint": "9.0.0-rc.0"
+  }
+}
