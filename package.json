@@ -14,10 +14,12 @@
     "preinstall": "npx only-allow pnpm",
     "dev:app": "pnpm --filter @warrior/app dev",
     "dev:dev": "pnpm --filter @warrior/dev dev",
+    "dev:three": "pnpm --filter @warrior/three dev",
     "dev:next": "pnpm --filter @warrior/next dev",
     "build:app": "pnpm --filter @warrior/app build",
     "build:dev": "pnpm --filter @warrior/dev build",
     "build:next": "pnpm --filter @warrior/next build",
+    "build:three": "pnpm --filter @warrior/three build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
